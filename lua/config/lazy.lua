@@ -31,7 +31,7 @@ local plugins = {
     },
     {"hrsh7th/cmp-nvim-lsp"}, -- autocompletion
     {"hrsh7th/nvim-cmp"}, --additional autocompletion
-
+    {"L3MON4D3/LuaSnip", version = "v2.*", build = "make install_jsregexp", dependencies = {'saadparwaiz1/cmp_luasnip','rafamadriz/friendly-snippets'}}, --snippet engine
     --lsp configuration
     {
       'nvim-lualine/lualine.nvim',
@@ -40,7 +40,7 @@ local plugins = {
     --color scheme 
     {'rebelot/kanagawa.nvim'}, 
     --{"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {},}
-    --{ "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
 }
 
 require("lazy").setup(plugins, {})
