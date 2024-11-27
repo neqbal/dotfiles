@@ -45,9 +45,9 @@ keymap.set("n", "<leader>qc", ":cclose<CR>") -- close quickfix list
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle maximize tab
 
 -- Nvim-tree
-keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>") -- toggle file explorer
-keymap.set("n", "<leader>er", ":NvimTreeFocus<CR>") -- toggle focus to file explorer
-keymap.set("n", "<leader>ef", ":NvimTreeFindFile<CR>") -- find file in file explorer
+--keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>") -- toggle file explorer
+--keymap.set("n", "<leader>er", ":NvimTreeFocus<CR>") -- toggle focus to file explorer
+--keymap.set("n", "<leader>ef", ":NvimTreeFindFile<CR>") -- find file in file explorer
 
 -- Telescope
 keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, {})
@@ -61,19 +61,6 @@ keymap.set('n', '<leader>fm', function() require('telescope.builtin').treesitter
 
 -- Git-blame
 keymap.set("n", "<leader>gb", ":GitBlameToggle<CR>") -- toggle git blame
-
--- Harpoon
---keymap.set("n", "<leader>ha", require("harpoon.list").add_file)
---keymap.set("n", "<leader>hh", require("harpoon.ui").toggle_quick_menu)
---keymap.set("n", "<leader>h1", function() require("harpoon.ui").nav_file(1) end)
---keymap.set("n", "<leader>h2", function() require("harpoon.ui").nav_file(2) end)
---keymap.set("n", "<leader>h3", function() require("harpoon.ui").nav_file(3) end)
---keymap.set("n", "<leader>h4", function() require("harpoon.ui").nav_file(4) end)
---keymap.set("n", "<leader>h5", function() require("harpoon.ui").nav_file(5) end)
---keymap.set("n", "<leader>h6", function() require("harpoon.ui").nav_file(6) end)
---keymap.set("n", "<leader>h7", function() require("harpoon.ui").nav_file(7) end)
---keymap.set("n", "<leader>h8", function() require("harpoon.ui").nav_file(8) end)
---keymap.set("n", "<leader>h9", function() require("harpoon.ui").nav_file(9) end)
 
 -- Vim REST Console
 keymap.set("n", "<leader>xr", ":call VrcQuery()<CR>") -- Run REST query

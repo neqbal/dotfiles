@@ -21,10 +21,44 @@ local function set_relative_line_numbers()
     set_relative_line_numbers()
   end
 
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.bo.softtabstop = 4
-vim.o.scrolloff = 999
+local opt = vim.opt
+-- Tabs & Indentation
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.autoindent = true
+vim.bo.softtabstop = 2
 
+-- Line Wrapping
+opt.wrap = false
 
+-- Search Settings
+opt.ignorecase = true
+opt.smartcase = true
+
+-- Cursor Line
+opt.cursorline = true
+
+-- Appearance
+opt.termguicolors = true
+opt.background = "dark"
+opt.signcolumn = "yes"
+opt.showmode = false
+vim.diagnostic.config {
+  float = { border = "rounded" }, -- add border to diagnostic popups
+}
+
+-- Backspace
+opt.backspace = "indent,eol,start"
+
+-- Clipboard
+opt.clipboard:append("unnamedplus")
+
+-- Split Windows
+opt.splitright = true
+opt.splitbelow = true
+
+-- Folding
+opt.foldlevel = 20
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()" -- Utilize Treesitter folds
