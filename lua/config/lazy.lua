@@ -68,6 +68,13 @@ local plugins = {
       'nvim-lualine/lualine.nvim',
       dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
+    {
+      'nvim-tree/nvim-tree.lua',
+      dependencies = {
+      -- https://github.com/nvim-tree/nvim-web-devicons
+      'nvim-tree/nvim-web-devicons', -- Fancy icon support
+      }
+    },
     --color scheme 
     {'rebelot/kanagawa.nvim'},
     --{"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {},}
