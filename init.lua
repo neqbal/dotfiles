@@ -39,6 +39,10 @@ opt.smartcase = true
 -- Cursor Line
 opt.cursorline = true
 
+--keep cursor centered
+opt.scrolloff = 999
+opt.sidescrolloff = 8
+
 -- Appearance
 opt.termguicolors = true
 opt.background = "dark"

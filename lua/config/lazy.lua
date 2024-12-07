@@ -41,7 +41,9 @@ local plugins = {
         event = "InsertEnter",
         config = true
     },
-
+    {
+      'windwp/nvim-ts-autotag',
+    },
     {
         "mfussenegger/nvim-jdtls",
     },
