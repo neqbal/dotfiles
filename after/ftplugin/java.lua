@@ -73,7 +73,7 @@ local config = {
         runtimes = {
                 {
                     name = "JavaSE-21",
-                    path = "/usr/lib/jvm/java-21-openjdk-21.0.5.0.11-1.fc40.x86_64",
+                    path = "/usr/lib/jvm/java-21-openjdk-21.0.5.0.11-1.fc41.x86_64",
                 }
         },
       },
