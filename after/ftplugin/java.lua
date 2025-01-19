@@ -62,7 +62,7 @@ local config = {
   settings = {
     java = {
       -- TODO Replace this with the absolute path to your main java version (JDK 17 or higher)
-      home = "/usr/lib/jvm/java-21-openjdk-21.0.5.0.11-1.fc40.x86_64",
+      home = "/usr/lib/jvm/java-21-openjdk-21.0.5.0.11-1.fc41.x86_64",
       eclipse = {
         downloadSources = true,
       },

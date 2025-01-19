@@ -4,6 +4,7 @@ require('mason-lspconfig').setup({
         'lua_ls',
         'jdtls',
         'html',
+        'pyright',
     },
 })
 
@@ -12,6 +13,12 @@ require('mason-tool-installer').setup({
     ensure_installed = {
         'java-debug-adapter',
         'java-test',
+        'black',
+        'debugpy',
+        'flake8',
+        'isort',
+        'mypy',
+        'pylint',
     },
 })
 

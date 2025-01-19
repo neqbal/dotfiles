@@ -23,11 +23,11 @@ local function set_relative_line_numbers()
 
 local opt = vim.opt
 -- Tabs & Indentation
-opt.tabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
-vim.bo.softtabstop = 2
+vim.bo.softtabstop = 4
 
 -- Line Wrapping
 opt.wrap = false
