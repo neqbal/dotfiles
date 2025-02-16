@@ -117,4 +117,32 @@ local opts = {
     },
   }
 
+    -- Configure the Python adapter
+  dap.adapters.python = {
+    type = "executable",
+    command = "python", -- Change to "python3" if needed
+    args = { "-m", "debugpy.adapter" },
+  }
+
+  -- Define Python debugging configurations
+dap.configurations.python = {
+    {
+        type = "python",
+        request = "launch",
+        name = "Launch File",
+        program = "${file}", -- Runs the current file
+        pythonPath = function()
+            return "python" -- Modify if you use a virtual environment
+        end,
+    },
+    {
+        type = "python",
+        request = "attach",
+        name = "Attach to Process",
+        connect = {
+            host = "127.0.0.1",
+            port = 5678,
+        },
+    },
+}
 return { opts = opts, config = config }

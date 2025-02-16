@@ -37,6 +37,8 @@ local plugins = {
 	    "williamboman/mason-lspconfig.nvim",
         "WhoIsSethDaniel/mason-tool-installer.nvim",
     	"neovim/nvim-lspconfig",
+        "jay-babu/mason-null-ls.nvim",
+        "jose-elias-alvarez/null-ls.nvim",
     },
 
     {
@@ -44,9 +46,11 @@ local plugins = {
         event = "InsertEnter",
         config = true
     },
+
     {
       'windwp/nvim-ts-autotag',
     },
+
     {
         "mfussenegger/nvim-jdtls",
     },
