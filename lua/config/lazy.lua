@@ -29,6 +29,9 @@ local plugins = {
 
     {"tpope/vim-fugitive"},
 
+    { 'lewis6991/gitsigns.nvim',
+        dependencies = { 'nvim-lua/plenary.nvim' }},
+
     {
 	    "williamboman/mason.nvim",
 	    "williamboman/mason-lspconfig.nvim",

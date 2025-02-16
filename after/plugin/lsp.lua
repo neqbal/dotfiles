@@ -5,6 +5,7 @@ require('mason-lspconfig').setup({
         'jdtls',
         'html',
         'pyright',
+        'clangd',
     },
 })
 
