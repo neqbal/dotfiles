@@ -1,0 +1,31 @@
+general.import = ["~/.config/alacritty/rose-pine.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[cursor.style]
+blinking = "on"
+shape = "Beam"
+[window]
+padding.x = 10
+padding.y = 10
+decorations = "Full"
+startup_mode = "Maximized"
+
+opacity = 0.95
+blur = false
+
+option_as_alt = "Both"
+
+[font]
+size = 13.0
+normal = {family = 'CaskaydiaCove Nerd Font', style = 'Regular'}
+
+[window.dimensions]
+columns = 60
+lines = 20
+
+[keyboard]
+bindings = [
+{ key = "T", mods = "Control|Shift", action = "SpawnNewInstance" },
+]

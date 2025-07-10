@@ -1,0 +1,37 @@
+
+theme = rose-pine
+
+keybind = shift+ctrl+h=new_split:left
+keybind = shift+ctrl+j=new_split:down
+keybind = shift+ctrl+k=new_split:up
+keybind = shift+ctrl+l=new_split:right
+
+keybind = shift+ctrl+r=reload_config
+
+keybind = shift+ctrl+[=increase_font_size:1 
+keybind = shift+ctrl+]=decrease_font_size:1
+
+keybind = shift+alt+h=goto_split:left
+keybind = shift+alt+j=goto_split:bottom
+keybind = shift+alt+k=goto_split:top
+keybind = shift+alt+l=goto_split:right
+
+keybind = shift+ctrl+e=equalize_splits
+
+keybind = shift+ctrl+7=resize_split:left,10
+keybind = shift+ctrl+8=resize_split:down,10
+keybind = shift+ctrl+9=resize_split:up,10
+keybind = shift+ctrl+0=resize_split:right,10
+
+keybind = shift+ctrl+z=toggle_fullscreen
+
+font-family = 'CaskaydiaCove Nerd Font'
+
+keybind = ctrl+shift+v=paste_from_clipboard
+
+mouse-hide-while-typing = true
+window-decoration = none
+background-opacity = 0.9
+background-blur-radius = 5
+gtk-titlebar=false
+gtk-adwaita=true
